@@ -123,3 +123,39 @@ color: #7fc8e8;
 
     color: #ffffff;
  }
+ main h2 {
+    cursor: pointer;
+}
+
+main h2::after {
+    content: " ▾";
+}
+
+main section.plegada h2::after {
+    content: " ▸";
+}
+
+main section.plegada > * {
+    display: none;
+}
+
+main section.plegada > h2 {
+    display: block;
+}
+
+.error {
+    border: 2px solid #a23b2c;
+}
+
+#aviso-discusion {
+    color: #a23b2c;
+    font-weight: bold;
+}
+
+#lista-comentarios li {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #c9d1d5;
+    border-radius: 6px;
+    list-style: none;
+}
