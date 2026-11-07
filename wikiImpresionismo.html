@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impresionismo musical - Mi Wiki</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="contenedor-wiki">
@@ -17,16 +18,26 @@
         <aside>
             <h2>Índice</h2>
             <ul>
-                <li><a href="#que-fue">¿Qué fue?</a></li>
-                <li><a href="#inicios">Inicios</a></li>
-                <li><a href="#aspectos">Aspectos</a></li>
-                <li><a href="#ref">Referencias</a></li>
+            
             </ul>
+            <div class="panel-apariencia">
+    <h2>Apariencia</h2>
+
+    <button type="button" id="boton-modo">Modo oscuro</button>
+
+    <p>Tamaño del texto</p>
+    
+    <button type="button" id="boton-pequeno">Pequeño</button>
+
+    <button type="button" id="boton-estandar" class="activo">Estándar</button>
+
+    <button type="button" id="boton-grande">Grande</button>
+</div>
         </aside>
 
         <main>
             <img src="imagenes/Le_Faune_-_The_Art_of_Nijinsky.jpg" alt="El fauno - El arte de Nijinsky">
-
+<section>
             <h2 id="que-fue">¿Qué fue?</h2>
             <p>
                 La música impresionista es la tendencia musical que surgió en Francia a finales del siglo XIX. El nombre impresionismo ya se usaba antes para denominar a la pintura de los años 1860 - 1870, ya que las características de ambas artes eran muy similares. Los dos únicos autores a los que podemos llamar impresionistas en aquella época son Claude Debussy y Déodat de Séverac, aunque este último no está tan reconocido como gran parte de autores posteriores. Sin embargo, Claude Debussy es el autor impresionista más notorio, junto con los también franceses Maurice Ravel y Erik Satie.[cita requerida]
@@ -35,14 +46,16 @@
 
                 La característica más destacada en el Impresionismo musical es el uso del "color", o en términos musicales, timbre, que se puede conseguir a través de la orquestación, el uso armónico, la textura, etc.[1] Otros elementos del Impresionismo musical también implican nuevas combinaciones de acordes, tonalidad ambigua, armonías extendidas, uso de modos y escalas exóticas, movimiento paralelo, extra-musicalidad, y títulos evocadores como "Reflets dans l'eau" ("Reflejos en el agua"), "Brouillards" ("Brumas"), etc.[2]
             </p>
-
+</section>
+<section>
             <h2 id="inicios">Inicios del impresionismo</h2>
             <p>
                 La música occidental ya estaba sistematizada en la Antigua Grecia, donde se usaban aproximadamente 7 escalas. Estas escalas pasaron de Grecia a Roma y sucesivamente a la Iglesia católica. Estas eran frecuentemente utilizadas en el canto llano y en la música medieval. Pero al llegar el período barroco, solo se conservaron dos de estas escalas (con sus respectivas variaciones): la escala mayor (o jónica) y la menor (o eólica). Pero los años pasaron, y al llegar el posromanticismo, autores como Gabriel Fauré o Camille Saint-Saëns experimentaron con estas escalas y con el timbre (aspecto que más tarde sería esencial en el impresionismo) de una manera pionera, pero sin profundizar demasiado.
 
                 A finales del siglo XIX, la vanguardia y el progreso nunca habían tenido tanta repercusión, tanto en política y en sociedad como en el ámbito artístico. En música, como en pintura, surgió el impresionismo, la libertad absoluta armónica y rítmicamente (respetando unos parámetros previamente fijados, pero manipulables en cualquier momento) y la experimentación fueron las dos características principales de este movimiento. Sin duda, Claude Debussy es en gran parte el creador, y autor por excelencia del impresionismo, y Francia la cuna de este gran movimiento vanguardista.
             </p>
-
+</section>
+<section>
             <h2 id="aspectos">Aspectos del impresionismo</h2>
             <p>
                 El impresionismo, tanto en música como en otras artes, surge a partir de la idea de expresar las ideas de una manera en cierto modo insinuada. De cerca se ven manchas y de lejos crea una figura por decirlo así. Por ejemplo, en la primera fotografía, se puede observar el Parlamento británico retratado de un modo en el que apenas se puede intuir su forma.
@@ -54,6 +67,35 @@
                 Experimentar con el timbre, convirtiendo a este en el factor más importante de la música impresionista. De esta manera, se conseguían efectos nunca vistos antes en la música. El preludio de Claude Debussy La Cathédrale Engloutie es un claro ejemplo de los diferentes timbres y sensaciones que pueden escucharse en una misma obra, interpretado aquí por Maurizio Pollini.
                 Autores como Maurice Ravel o Camille Saint-Saëns se atrevieron a experimentar con la música de su época, y a crear algo diferente a las obras de entonces. Pero fue Claude Debussy el primero en crear una música totalmente diferente a la anterior, y nunca antes escuchada.
             </p>
+</section>
+<section>
+    <h2 id="discusion">Discusión</h2>
+
+    <form id="formulario-discusion">
+
+        <label for="campo-nombre">Nombre:</label>
+
+        <input type="text" id="campo-nombre" name="nombre">
+
+
+
+        <label for="campo-comentario">Comentario:</label>
+
+        <textarea id="campo-comentario" name ="comentario" rows=" 4"> </textarea>
+
+
+
+        <p id="contador-caracteres">0 / 200</p>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+
+    <p id="aviso-discusion"></p>
+
+    <ul id="lista-comentarios"></ul>
+</section>
         </main>
 
         <footer>

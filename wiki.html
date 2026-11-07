@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabrina Carpenter - Mi Wiki</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="contenedor-wiki">
@@ -16,18 +17,27 @@
 
         <aside>
             <h2>Índice</h2>
-            <ul>
-                <li><a href="#quien-es">¿Quién es?</a></li>
-                <li><a href="#biografia">Biografía</a></li>
-                <li><a href="#vida">Vida personal</a></li>
-                <li><a href="#trayectoria">Trayectoria</a></li>
-                <li><a href="#ref">Referencias</a></li>
+            <ul id="indice">
+               
             </ul>
+            <div class="panel-apariencia">
+    <h2>Apariencia</h2>
+
+    <button type="button" id="boton-modo">Modo oscuro</button>
+
+    <p>Tamaño del texto</p>
+    
+    <button type="button" id="boton-pequeno">Pequeño</button>
+
+    <button type="button" id="boton-estandar" class="activo">Estándar</button>
+
+    <button type="button" id="boton-grande">Grande</button>
+</div>
         </aside>
 
         <main>
             <img src="imagenes/laImagenDeSabrina.jpg" alt="Sabrina Carpenter">
-
+<section>
             <h2 id="quien-es">¿Quién es?</h2>
             <p>
                 Sabrina Annlynn Carpenter (Quakertown, Pensilvania, 11 de mayo de 1999) es una cantante, compositora, productora musical y actriz estadounidense.[3] Obtuvo reconocimiento por primera vez como protagonista de la serie de Disney Channel Girl Meets World (2014-2017) y firmó con Hollywood Records, propiedad de Disney. Lanzó su sencillo debut, «Can't Blame a Girl for Trying» en 2014, seguido de cuatro álbumes de estudio: Eyes Wide Open (2015), Evolution (2016), Singular: Act I (2018) y Singular: Act II (2019); tres de sus sencillos, «Almost Love», «Sue Me», «Alien», y las más recientes, «Espresso», «Please Please Please» y «Taste» encabezaron la lista de canciones de clubes de baile de Estados Unidos. Además de su colaboración en 2019, con Alan Walker y Farruko en "On My Way", que tiene más de 600 millones de vistas en YouTube.
@@ -38,14 +48,16 @@
 
                 Carpenter ha aparecido en películas como la comedia Adventures in Babysitting (2016), el drama sobre la mayoría de edad The Hate U Give (2018), el road drama The Short History of the Long Road (2019), el drama musical Clouds (2020) y el thriller Emergency (2022). También ha protagonizado las producciones de Netflix Tall Girl (2019), Tall Girl 2 (2022) y Work It (2020), de la cual fue productora ejecutiva. En Broadway, interpretó un papel principal en el musical Mean Girls (2020).
             </p>
-
+</section>
+<section>   
             <h2 id="biografia">Biografía</h2>
             <p>
                 Sabrina Carpenter nació el 11 de mayo de 1999 en Quakertown, Pensilvania, y se crio en East Greenville, Pensilvania.[4] Sus padres son David y Elizabeth Carpenter, y tiene tres hermanas mayores: Sarah, Shannon y Cayla. Es sobrina de la actriz Nancy Cartwright, conocida por hacer el doblaje original del personaje Bart Simpson y de otros personajes, en la serie animada estadounidense Los Simpson.[5]
 
                 Carpenter fue educada en casa.[6] A los 10 años comenzó a publicar videos en YouTube donde se filmaba cantando.[7] Es por eso que su padre le construyó un estudio de grabación para alimentar su pasión por la música. En 2011, cuando tenía 12 años, ocupó el tercer lugar en un concurso de canto, The Next Miley Cyrus Project, dirigido por la cantante y actriz Miley Cyrus.[8]
             </p>
-
+</section>
+<section> 
             <h2 id="vida">Vida personal</h2>
             <p>
                 Carpenter mantuvo una relación con el actor Bradley Steven Perry entre 2014 y 2015.[9] Salió brevemente con el cantante Shawn Mendes en 2023.[9]
@@ -54,7 +66,8 @@
 
                 Compró una casa de $4.4 millones en el barrio de Hollywood Hills de Los Ángeles en 2023 y también posee una casa de $1.7 millones en el barrio de Northridge, comprada en 2018.[cita requerida] Ha alquilado un apartamento en el área del Distrito Financiero de la ciudad de Nueva York desde que escribió Emails I Can't Send.[cita requerida]
             </p>
-
+</section>
+<section>
             <h2 id="trayectoria">Trayectoria</h2>
             <p>
                 2011-2013: Primeros papeles de actuación
@@ -76,6 +89,38 @@
 
                 En octubre de 2017, Carpenter apareció en la canción «First Love» de Lost Kings.[37] En diciembre, Carpenter lanzó una versión de «Have Yourself a Merry Little Christmas».[38] Ese mismo año, también lanzó versiones de «Sign of the Times» y «You're a Mean One, Mr. Grinch» con la cantante británica Jasmine Thompson y la violinista Lindsey Stirling, respectivamente.[39][40]
             </p>
+            </section>
+
+            <section>
+
+ <h2 id="discusion">Discusión</h2>
+
+    <form id="formulario-discusion">
+
+        <label for="campo-nombre">Nombre:</label>
+
+        <input type="text" id="campo-nombre" name="nombre">
+
+
+
+        <label for="campo-comentario">Comentario:</label>
+
+        <textarea id="campo-comentario" name ="comentario" rows=" 4"></textarea>
+        
+
+
+        <p id="contador-caracteres">0 / 200</p>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+
+    <p id="aviso-discusion"></p>
+
+    <ul id="lista-comentarios"></ul>
+
+            </section>
         </main>
 
         <footer>

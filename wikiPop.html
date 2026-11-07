@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop - Mi Wiki</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="contenedor-wiki">
@@ -17,17 +18,26 @@
         <aside>
             <h2>Índice</h2>
             <ul>
-                <li><a href="#que">¿Qué es?</a></li>
-                <li><a href="#origen">Origen</a></li>
-                <li><a href="#influencias">Influencias y desarrollo</a></li>
-                <li><a href="#caracteristicas">Características</a></li>
-                <li><a href="#ref">Referencias</a></li>
+              
             </ul>
+            <div class="panel-apariencia">
+    <h2>Apariencia</h2>
+
+    <button type="button" id="boton-modo">Modo oscuro</button>
+
+    <p>Tamaño del texto</p>
+    
+    <button type="button" id="boton-pequeno">Pequeño</button>
+
+    <button type="button" id="boton-estandar" class="activo">Estándar</button>
+
+    <button type="button" id="boton-grande">Grande</button>
+</div>
         </aside>
 
         <main>
             <img src="imagenes/Michael_Jackson.svg.png" alt="Michael Jackson, considerado el Rey del Pop">
-
+<section>
             <h2 id="que">¿Qué es?</h2>
             <p>
                 Este artículo trata sobre un género específico de música. Para música popular en general, véase Música popular. Para otros usos de este término, véase Pop (desambiguación).
@@ -38,13 +48,15 @@
 
                 Es un género ecléctico, que toma prestados elementos de otros estilos como el urban, el dance, el rock, la música latinoamericana, el rhythm and blues o el folk. Con todo, hay elementos esenciales que definen al pop, como son las canciones de corta a media duración, escritas en un formato básico (a menudo la estructura estrofa-estribillo), así como el uso habitual de estribillos repetidos, de temas melódicos y ganchos. La instrumentación se compone habitualmente de guitarra, batería, bajo, guitarra eléctrica, teclado, sintetizador, etc.[3]
             </p>
-
+</section>
+<section>
             <h2 id="origen">Origen del término</h2>
             <p>
                 El término canción pop se registró por primera vez en 1926, usado en el sentido de una pieza musical «que tenga atractivo popular».[4] A partir de la década de 1950, el término «música pop» se ha utilizado para describir un género distinto, destinado a un mercado joven, a menudo caracterizado como una alternativa suave al rock and roll.[5][6] Según el musicólogo T. Warner, «a raíz del auge de los artistas británicos de la conocida como invasión británica, alrededor de 1967, el término fue utilizado cada vez más en oposición al concepto de música rock, para describir una forma musical más comercial, efímera y accesible».[7]
             </p>
-
-            <h2 id="influencias">Influencias y desarrollo</h2>
+</section>
+<section>
+       <h2 id="influencias">Influencias y desarrollo</h2>
             <p>
                 A lo largo de su existencia, la música pop ha absorbido influencias de la mayoría de los otros géneros de música popular. El pop de los comienzos se inspiró en la balada sentimental para tomar su forma, tomó del góspel y el soul su uso de las armonías vocales, del jazz, el country y el rock su instrumentación, de la música clásica su orquestación, del dance su tempo, de la música electrónica su acompañamiento, del hip hop elementos rítmicos, y recientemente ha incorporado también los pasajes hablados del rap.[5]
 
@@ -60,7 +72,8 @@
 
                 De acuerdo con Grove Music Online, «los estilos occidentales de pop, ya sea coexistiendo o marginalizando a los géneros de carácter local, se han expandido por el mundo y han llegado a constituir unos denominadores estilísticos comunes en las culturas globales de música comercial».[14] Algunos países no occidentales, como Japón, han desarrollado una industria próspera de música pop, la mayoría de la cual se enfoca al pop de estilo occidental, y ha producido durante varios años una cantidad de música mayor que cualquier otro país excepto Estados Unidos.[14] No solo en Japón se ha desarrollado la música pop de manera internacional, también se ha desarrollado en otros países de Asia como Corea, o en China, donde se puede encontrar el Cpop. Estos distintos géneros del pop en estos últimos años han tomado un gran impacto entre los adolescentes y los adultos, atrayéndolos con sus vídeos de alta producción y canciones con letras de profundo significado. La expansión de la música pop de estilo occidental ha sido interpretada de manera variada como la representación de procesos de americanización, homogeneización, modernización, apropiación creativa, imperialismo cultural, y/o un proceso más genérico de globalización.[14]
             </p>
-
+</section>
+<section>
             <h2 id="caracteristicas">Características</h2>
             <p>
                 Los musicólogos suelen identificar unas series de características muy típicas del género de música popular: un enfoque en canciones individuales o sencillos (singles), en lugar de obras extensas o álbumes; el objetivo de atraer a un público general, en lugar de dirigirse a una subcultura o ideología; una preferencia por la artesanía por encima de cualidades formales artísticas; cierto énfasis en la grabación, producción y tecnología, antes que la actuación en vivo; y una tendencia a reflejar las tendencias existentes en lugar de a los desarrollos progresivos.[5][6][7][16]
@@ -73,6 +86,37 @@
 
                 La armonía de la música pop coincide con la de la tonalidad europea clásica, utilizando a menudo los ciclos de tónica-subdominante-dominante-tónica, aunque también a veces con influencias frecuentes de la escala de blues.[20]
             </p>
+</section>
+<section>
+ <h2 id="discusion">Discusión</h2>
+
+    <form id="formulario-discusion">
+
+        <label for="campo-nombre">Nombre:</label>
+
+        <input type="text" id="campo-nombre" name="nombre">
+
+
+
+        <label for="campo-comentario">Comentario:</label>
+
+        <textarea id="campo-comentario" name ="comentario" rows=" 4"> </textarea>
+        
+
+
+        <p id="contador-caracteres">0 / 200</p>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+
+    <p id="aviso-discusion"></p>
+
+    <ul id="lista-comentarios"></ul>
+
+
+</section>
         </main>
 
         <footer>
