@@ -89,3 +89,37 @@ header
 
     width: auto;
 }
+
+body.modo-oscuro { 
+
+    background-color: #333333;
+
+    color: #ffffff;
+}
+
+body.modo-oscuro aside,
+body.modo-oscuro main { 
+
+    background-color: #555555;
+ }
+
+body.modo-oscuro a { 
+
+color: #7fc8e8;
+ }
+
+
+ main.texto-pequeno 
+ {
+    font-size: 85%;
+ }
+
+ main.texto-grande{
+    font-size: 125%;
+ }
+ .panel-apariencia button.activo
+ {
+    background-color: #333333;
+
+    color: #ffffff;
+ }
