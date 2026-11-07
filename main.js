@@ -109,6 +109,15 @@ titulosArticulo.forEach(function (titulo) {
  formularioDiscusion.addEventListener('submit', function (event) {
     event.preventDefault();
 
+    
+    avisoDiscusion.textContent = '';
+
+
+campoNombre.classList.remove('error');
+
+
+campoComentario.classList.remove('error');
+
     const nombre = campoNombre.value.trim();
     const comentario = campoComentario.value.trim();
 
