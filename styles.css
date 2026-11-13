@@ -159,3 +159,11 @@ main section.plegada > h2 {
     border-radius: 6px;
     list-style: none;
 }
+
+body.modo-oscuro .error {
+    border-color: #ffc9c0;
+}
+
+body.modo-oscuro #aviso-discusion {
+    color: #ffc9c0;
+}
